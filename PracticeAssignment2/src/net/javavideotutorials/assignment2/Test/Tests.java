@@ -34,6 +34,8 @@ public class Tests
     ((Employee)anEmployee).setOrganization(new Google("Google"));
     employees.add(anEmployee);
     
+    System.out.println(employees);
+    
     anEmployee = new Employee();
     anEmployee.setName("Jane Doe");
     anEmployee.setSex("Female");
