@@ -1,34 +1,43 @@
 package net.javavideotutorials.assignment2.Structure;
 
+import net.javavideotutorials.assignment2.Human.Employee;
+
 public class Google implements Organization
 {
 
-	public Google(String string) {
-		// TODO Auto-generated constructor stub
+	private Integer numEmployees;
+	private String nameOfOrganization;
+	
+	// Constructor
+	// It will be run as soon as the method is 
+	// Like this: ((Employee)anEmployee).setOrganization(new Google("Google"))
+	public Google(String nameOfOrganization) {
+		this.nameOfOrganization = nameOfOrganization;
 	}
 
 	@Override
 	public Integer getNumberOfEmployees() {
-		// TODO Auto-generated method stub
-		return null;
+		return numEmployees;
 	}
 
 	@Override
 	public String getNameOfOrganization() {
-		// TODO Auto-generated method stub
-		return null;
+		return nameOfOrganization;
 	}
 
 	@Override
 	public void setNumberOfEmployees(Integer numEmployees) {
-		// TODO Auto-generated method stub
-		
+		this.numEmployees = numEmployees;
 	}
 
 	@Override
 	public void setNameOfOrganization(String nameOfOrganization) {
-		// TODO Auto-generated method stub
-		
+		this.nameOfOrganization = nameOfOrganization;
 	}
   
+	@Override
+	public String toString() {
+		
+		return getNameOfOrganization();
+	}
 }

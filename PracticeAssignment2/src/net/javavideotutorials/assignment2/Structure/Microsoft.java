@@ -3,10 +3,15 @@ package net.javavideotutorials.assignment2.Structure;
 public class Microsoft implements Organization
 {
 
-	public Microsoft(String string) {
-		// TODO Auto-generated constructor stub
-	}
+	private String nameOfOrganization;
 
+	// Constructor
+	// It will be run as soon as the method is 
+	// Like this: ((Employee)anEmployee).setOrganization(new Google("Google"))
+	public Microsoft(String nameOfOrganization) {
+		this.nameOfOrganization = nameOfOrganization;
+	}
+	
 	@Override
 	public Integer getNumberOfEmployees() {
 		// TODO Auto-generated method stub
@@ -16,7 +21,7 @@ public class Microsoft implements Organization
 	@Override
 	public String getNameOfOrganization() {
 		// TODO Auto-generated method stub
-		return null;
+		return nameOfOrganization;
 	}
 
 	@Override
@@ -27,8 +32,13 @@ public class Microsoft implements Organization
 
 	@Override
 	public void setNameOfOrganization(String nameOfOrganization) {
-		// TODO Auto-generated method stub
+		this.nameOfOrganization = nameOfOrganization;
 		
 	}
   
+	@Override
+	public String toString() {
+		
+		return getNameOfOrganization();
+	}
 }

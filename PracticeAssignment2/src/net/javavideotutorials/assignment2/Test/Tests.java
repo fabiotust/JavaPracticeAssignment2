@@ -32,9 +32,7 @@ public class Tests
     anEmployee.setBirthday(cal.getTime());
     ((Employee)anEmployee).setJobTitle("Sr. Software Engineer");
     ((Employee)anEmployee).setOrganization(new Google("Google"));
-    employees.add(anEmployee);
-    
-    System.out.println(employees);
+    employees.add((Employee) anEmployee);
     
     anEmployee = new Employee();
     anEmployee.setName("Jane Doe");
@@ -42,7 +40,7 @@ public class Tests
     anEmployee.setBirthday(cal.getTime());
     ((Employee)anEmployee).setJobTitle("Sr. Software Engineer");
     ((Employee)anEmployee).setOrganization(new Google("Google"));
-    employees.add(anEmployee);
+    employees.add((Employee) anEmployee);
     
     anEmployee = new Employee();
     anEmployee.setName("Trevor Page");
@@ -50,7 +48,7 @@ public class Tests
     anEmployee.setBirthday(cal.getTime());
     ((Employee)anEmployee).setJobTitle("Sr. Software Engineer");
     ((Employee)anEmployee).setOrganization(new Google("Google"));
-    employees.add(anEmployee);
+    employees.add((Employee) anEmployee);
     
     anEmployee = new Employee();
     anEmployee.setName("Trevor Page");
@@ -58,7 +56,7 @@ public class Tests
     anEmployee.setBirthday(cal.getTime());
     ((Employee)anEmployee).setJobTitle("Sr. Software Engineer");
     ((Employee)anEmployee).setOrganization(new Microsoft("Microsoft"));
-    employees.add(anEmployee);
+    employees.add((Employee) anEmployee);
   }
   
   @Test
