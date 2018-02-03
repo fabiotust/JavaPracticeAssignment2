@@ -40,4 +40,31 @@ public class Google implements Organization
 		
 		return getNameOfOrganization();
 	}
+
+	@Override
+	public int hashCode() {
+		final int prime = 31;
+		int result = 1;
+		result = prime * result + ((nameOfOrganization == null) ? 0 : nameOfOrganization.hashCode());
+		return result;
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		Google other = (Google) obj;
+		if (nameOfOrganization == null) {
+			if (other.nameOfOrganization != null)
+				return false;
+		} else if (!nameOfOrganization.equals(other.nameOfOrganization))
+			return false;
+		return true;
+	}
+	
+	
 }

@@ -64,7 +64,7 @@ public class Tests
   {
     String message = "Name: Trevor Page, Sex: Male" +
     "\nJob Title: Sr. Software Engineer, Organization: Google";
-
+    
     assertThat(employees.get(0).toString(), is(message));
   }
 
